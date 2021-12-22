@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Train Schedule</title>
+<meta name="description" content="Enter five digit train number or train name to get the train schedule. Train timetable will be shown with actual arrival and departure timings of train at its various route stations."> <link rel="canonical" href="https://www.trainspnrstatus.com/train-schedule"> <link rel="next" href="https://www.trainspnrstatus.com/train-schedule/1" /> <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://www.trainspnrstatus.com/newtheme/css/bootstrap.min.css">
+<link rel="shortcut icon" href="https://www.trainspnrstatus.com/img/favicon.ico" type="image/ico" />
+
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+<a class="navbar-brand" href="">
+  <span style="color:#2887ba;font-size:25px;">t</span><span style="color:white;font-weight:normal;">rain</span>status</span>
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="file:///C:/Users/HP/OneDrive/Desktop/Asynchronous-Task-01/train_status.html">PNR Status</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="file:///C:/Users/HP/OneDrive/Desktop/Asynchronous-Task-01/train_live.html">Live Train Running Status</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="file:///C:/Users/HP/OneDrive/Desktop/Asynchronous-Task-01/train_sched.html">Train Schedule</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="file:///C:/Users/HP/OneDrive/Desktop/Asynchronous-Task-01/train_btw_sta.html">Trains Between Stations</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="file:///C:/Users/HP/OneDrive/Desktop/Asynchronous-Task-01/train_enq.html">Train Enquiry</a>
+</li>
+</ul>
+</div>
+</nav>
+<div class="container" style="width: 50%;" >
+  <div class="row mysetting" style="align-items: center;">
+<div class="col-md-12">
+<h1 class="card-header h1s">Train Schedule</h1><br />
+<div class="jumbotron" style="padding: 2rem 2rem;"><form action="" id="contact_form" method="post">
+<div class="templatemo_textareabox">&nbsp;<input name="trainno" type="text" class="form-control" id="tags" maxlength="5" placeholder="Enter Train Number"><br><button type="submit" class="btn btn-info btn-block">Get Train Schedule</button></div>
+</form></div>
+
+</div>
+<div class="card">
+<div class="card-body">
+<p class="card-text"><a href="">Trainspnrstatus</a> provides a simple interface to check the <strong>train schedule</strong> of Indian Railways and IRCTC trains. All you need to do is to fill in the train number in the form above. Press the 'Get Train Schedule' button and wait for a few seconds.</p>
+<p class="card-text">For example, suppose you want to check the <strong>train time table</strong> of <a href="">11093 Mahanagari Express</a>, you will enter '11093' in the form.
+Similarly, suppose you want the <strong>train route</strong> of <a href="">15017 Kashi Express</a>, enter '15017' in the form and hit the 'Get Train Schedule' button.
+A new page containing train time table information will open in front of you. The new page will also include more detailed train info regarding the train route.</p>
+<p class="card-text">A train passes through many railway stations in its journey from source to destination. The <strong>train route</strong> is the information of <strong>train times</strong> at different stations it passes through and halts.</p>
+<p class="card-text">Train stoppages are serially tabulated with all the stations in the journey route. The first column of the table shows the stop number of the train. The second column provides the name of the stations at which it halts. The information such as journey day and running days are also provided in the same column.</p>
+<p class="card-text">The third column provides the arrival and departure times of the train at its journey stations. Here it is important to note that all railway times mentioned are in 24 hours format. By just looking at this column one can easily have an idea of halt time at a station in the route.</p>
+<p class="card-text">The fourth column shows the distance travelled by the train from source to reach a station in the route. The unit of the distance mentioned is a kilometre.</p>
+<p class="card-text">Let us understand the entire process with an example. Take a case where you want to check the train schedule of <a href="">Nellai Express</a>. Now you know that the train number of Nellai express is 12631. Hence you will visit the Trainspnrstatus <a href="">train schedule</a> page and enter '12631' in the form and submit it.</p>
+<p class="card-text">A new page opens with a heading '<a href="">12631 train route</a>' and a table containing route information. Simply looking at the table you can have an idea that the source station of Nellai express is <a href="">Chennai Egmore</a>. It departs from Chennai Egmore at 19:50.</p>
+<p class="card-text">Accordingly, you get to know that the second station in the route is <a href="">Tambaram</a>. The train arrives at Tambaram on 20:18 and leaves on 20:20. It halts for two minutes. From Chennai Egmore to Tambaram train has travelled a distance of 25 kilometres.</p>
+<p class="card-text">Similarly, we get to know that the third station is <a href="">Chengalpattu</a> where the train Nellai Express arrives daily at 20:48 after completing a total journey of 56 kilometres from the source station Chennai Egmore. It halts for two minutes and departs at 20:50.</p>
+<p class="card-text">In this way, we can check the entire <strong>train timings</strong> at the stations of the train conveniently and effortlessly. We have tabulated some important trains below the page for which you would like to check the <strong>IRCTC train time table</strong>.</p>
+<h2 class="card-title">Why there is a need to check the train route?</h2>
+<p class="card-text">As you know many times Indian Railways announces new trains between two places and you want to find which are the stations it passes through so that you can plan your travel accordingly. You want to know how fast the train completes its travel journey and what are the arrival and departure times etc then you check the train route of the train. It also helps you in ticket booking because you have the entire basic knowledge and information regarding a train.</p>
+<h2 class="card-title">Where can I check the train timetable?</h2>
+<p class="card-text">You can easily check <strong>train timings</strong> online by using the Trainpnrstatus train schedule page. Which you can find <a href="">here</a>.
+Alternatively one can also use the Indian Railways official website indianrail.gov.in or irctc.co.in. There is also a dedicated official enquiry portal designed by The Indian Railways called <strong>MNTES</strong>. One can also download NTES app from the Google Play Store to check <strong>railway timings</strong>.
+If you are at a railway station then you can find a <strong>railway time table chart</strong> near the reservation counter. No need to worry about the different options available, you can fastly check the <strong>train schedule today</strong> using the form above on this website.</p>
+</div>
+</div>
+<div class="table-responsive"><table class="table table-striped table-bordered tablefont"><tr><th>Train No</th><th>Train Name</th><th>Train Type</th><th>Source Station</th><th>Destination Station</th></tr><tr><td><a href="">00001</a></td><td><a href="">DRD SPECIAL 1</a></td><td> ()</td><td>VIRAR (VR)</td><td>DAHANU ROAD (DRD)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00002">00002</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00002">DRD SPECIAL 2</a></td><td> (SSPC)</td><td>DAHANU ROAD (DRD)</td><td>BMBY CHURCH GTE (CCG)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00101">00101</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00101">SGLA-ANDI KISAN SPL</a></td><td>Parcel Express (PEXP)</td><td>SANGOLA (SGLA)</td><td>ADARSH NAGAR DELHI (ANDI)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00102">00102</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00102">ANDI-DD PEXP SPL</a></td><td>Parcel Express (PEXP)</td><td>ADARSH NAGAR DELHI (ANDI)</td><td>DAUND JN (DD)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00107">00107</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00107">DVL-MFP KISAN PEXP SPL</a></td><td>Parcel Express (PEXP)</td><td>DEVLALI (DVL)</td><td>MUZAFFARPUR JN (MFP)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00108">00108</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00108">MFP-MMR KISAN PEXP</a></td><td>Parcel Express (PEXP)</td><td>MUZAFFARPUR JN (MFP)</td><td>MANMAD JN (MMR)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00109">00109</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00109">SGLA-MFP PEXP</a></td><td>Parcel Express (PEXP)</td><td>SANGOLA (SGLA)</td><td>MANMAD JN (MMR)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00110">00110</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00110">MMR-DD PEXP SPL</a></td><td>Parcel Express (PEXP)</td><td>MANMAD JN (MMR)</td><td>DAUND JN (DD)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00111">00111</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00111">PUNE-DD-MFP PARCEL EXP</a></td><td>Parcel Express (PEXP)</td><td>PUNE JN (PUNE)</td><td>DAUND JN (DD)</td></tr><tr><td><a href="https://www.trainspnrstatus.com/train-schedule/00112">00112</a></td><td><a href="https://www.trainspnrstatus.com/train-schedule/00112">MFP-DD-PUNE PARCEL EXP</a></td><td>Parcel Express (PEXP)</td><td>DAUND JN (DD)</td><td>PUNE JN (PUNE)</td></tr></table></div><ul class="pagination flex-wrap justify-content-center">
+<li><a class="page-link" href="">&lt;&lt;</a></li>
+<li><a class="page-link" href="">1</a></li>
+<li><a class="page-link" href="">2</a></li>
+<li><a class="page-link" href="">3</a></li>
+<li><a class="page-link" href="">4</a></li>
+<li><a class="page-link" href="">5</a></li>
+<li><a class="page-link" href="">6</a></li>
+<li><a class="page-link" href="">7</a></li>
+<li><a class="page-link" href="">&gt;&gt;</a></li>
+</ul>
+</div>
+
+<div style="margin-top:6%;margin-bottom:6%;">
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container text-center">
+<span class="text-white"> &copy; Train Status 2015-21</span>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-1.12.4.js" type="ba3fb26c3bc2155782ce0dbd-text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="ba3fb26c3bc2155782ce0dbd-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" type="ba3fb26c3bc2155782ce0dbd-text/javascript"></script>
+<script src="https://www.trainspnrstatus.com/newtheme/js/bootstrap.min.js" type="ba3fb26c3bc2155782ce0dbd-text/javascript"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ba3fb26c3bc2155782ce0dbd-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6c07e2c40b90dded',m:'00QPJ16qGayAt5lmarnUlfbWtNYOBJ5vXs0FowRej0o-1639992981-0-AbwaNG+QAI+if8Lo55XQh83Tnl8dmXgTXi5nqiLhx49zCetINLhxF6cpCrW5FH9lZfEE5QoukLr174ZcHzrqUqxaB+WkwHN3Bc1tG8Qn1nA/OSVJ/+aVNmys17bL2z8Png==',s:[0xf69855ccdf,0xf0b8087702],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+</html>
+<style>
+    body {
+      background-image: url('https://wallpapercave.com/wp/wp8274013.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+
